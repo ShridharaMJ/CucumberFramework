@@ -1,40 +1,22 @@
 package stepsDefinitions;
 
+import static com.cucumberpractice.drivers.DriverFactory.getDriver;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginSteps {
+public class LoginSteps  {
 
-	private WebDriver driver;
-
-	@Before
-	public void setUp() {
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions option = new ChromeOptions();
-		option.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		option.addArguments("--headless");
-		driver = new ChromeDriver(option);
-		driver.manage().window().maximize();
-		// driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-	}
-
-	@After
-	public void tearDown() {
-		driver.quit();
-	}
-
+	
+	private WebDriver driver=getDriver();
+	
+	
 	@Given("I navigate to login page")
 	public void i_navigate_to_login_page() {
 		// Write code here that turns the phrase above into concrete actions
