@@ -2,7 +2,7 @@ package stepsDefinitions;
 
 import java.util.Random;
 
-import org.apache.commons.lang3.RandomStringUtils;
+import com.cucumberpractice.pageobjects.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -11,27 +11,22 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import static com.cucumberpractice.drivers.DriverFactory.getDriver;
 
-public class ContactUsSteps {
+public class ContactUsSteps extends BasePage {
+
+	private WebDriver driver =getDriver();
 	
-	private WebDriver driver=getDriver();
-
-	public String generateRandom(int length) {
-		return RandomStringUtils.randomNumeric(length);
-	}
-
 	@Given("I access the webdriver univerisity contct us page")
 	public void i_access_the_webdriver_univerisity_contct_us_page() {
 		// Write code here that turns the phrase above into concrete actions
-		driver.get("https://webdriveruniversity.com/Contact-Us/contactus.html");
+		navigateToURL("https://webdriveruniversity.com/Contact-Us/contactus.html");
+
 	}
 
 	@When("I enter a unique first name")
 	public void i_enter_a_unique_first_name() {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath("//input[@name='first_name']")).sendKeys("Testing FirstName " + generateRandom(5));
-
+		sendKeys(By.xpath("//input[@name='first_name']"),"Testing FirstName " + generateRandom(5));
 	}
 
 	@And("I enter a unique last name")

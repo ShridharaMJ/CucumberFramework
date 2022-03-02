@@ -5,7 +5,7 @@ Feature: login feature
  @smoke
   Scenario Outline: login to portal using valid credentials
     Given I navigate to login page
-    When I enter valid username  "<username>" 
+    When I enter valid username  "<username>"
     And I enter valid   password "<password>"
     And I click on login 
     Then I should get validation alert with  "<message>"

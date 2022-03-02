@@ -39,8 +39,8 @@ public class Hooks {
 		
 		LocalDateTime time = LocalDateTime.now();
 		String timeString = time.toString();
-		File screenshot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
-		scenario.attach(Files.readAllBytes(Path.of(screenshot.getAbsolutePath())), "image/png", timeString);
+		byte[] screenshot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
+		scenario.attach(screenshot, "image/png", timeString);
 		
 		}
 	}
