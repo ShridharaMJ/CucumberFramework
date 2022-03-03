@@ -1,6 +1,6 @@
 #Author: your.email@your.domain.com
 
-@login
+@login @e2etest
 Feature: login feature
  @smoke
   Scenario Outline: login to portal using valid credentials

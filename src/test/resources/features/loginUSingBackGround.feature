@@ -1,6 +1,6 @@
 #Author: mj.shridhara@gmail.com
 
-@loginBackGround
+@e2etest
 Feature: WebDriver University - Login Page
 
 Background:

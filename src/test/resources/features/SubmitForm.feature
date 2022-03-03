@@ -1,6 +1,6 @@
 #Author: mj.shridhara@gmail.com	
 
-@contact-us @smoke
+@contact-us @smoke @e2etest
 Feature: Weddriver University- COntact us Page
 
 Scenario: Validate Successful  Submission - Unique data
