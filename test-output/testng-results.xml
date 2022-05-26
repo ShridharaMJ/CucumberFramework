@@ -5,12 +5,12 @@
   <suite started-at="2022-03-01T16:58:10 IST" name="Default suite" finished-at="2022-03-01T16:58:36 IST" duration-ms="25585">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@36bc55de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunnerTest@36bc55de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
     <test started-at="2022-03-01T16:58:10 IST" name="Default test" finished-at="2022-03-01T16:58:36 IST" duration-ms="25585">
-      <class name="runners.MyRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MyRunner@36bc55de]" started-at="2022-03-01T16:58:10 IST" name="setUpClass" finished-at="2022-03-01T16:58:14 IST" duration-ms="3584" status="PASS">
+      <class name="runners.MyRunnerTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MyRunnerTest@36bc55de]" started-at="2022-03-01T16:58:10 IST" name="setUpClass" finished-at="2022-03-01T16:58:14 IST" duration-ms="3584" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@36bc55de]" started-at="2022-03-01T16:58:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T16:58:35 IST" duration-ms="21059" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunnerTest@36bc55de]" started-at="2022-03-01T16:58:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T16:58:35 IST" duration-ms="21059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@36bc55de]" started-at="2022-03-01T16:58:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T16:58:35 IST" duration-ms="21104" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunnerTest@36bc55de]" started-at="2022-03-01T16:58:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T16:58:35 IST" duration-ms="21104" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@ at ✽.I should get validation alert with  "validation failed1"(classpath:featur
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@36bc55de]" started-at="2022-03-01T16:58:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T16:58:35 IST" duration-ms="21048" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunnerTest@36bc55de]" started-at="2022-03-01T16:58:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T16:58:35 IST" duration-ms="21048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,11 +86,11 @@ at ✽.I should get validation alert with  "validation failed1"(classpath:featur
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MyRunner@36bc55de]" started-at="2022-03-01T16:58:35 IST" name="tearDownClass" finished-at="2022-03-01T16:58:36 IST" duration-ms="655" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MyRunnerTest@36bc55de]" started-at="2022-03-01T16:58:35 IST" name="tearDownClass" finished-at="2022-03-01T16:58:36 IST" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.MyRunner -->
+      </class> <!-- runners.MyRunnerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

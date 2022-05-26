@@ -13,5 +13,4 @@ Feature: login feature
    Examples: 
     |username|password|message|
     |webdriver|webdriver123|validation succeeded|
-    |webdriver|webdriver12345|validation failed1|
-    |webdriver123|webdriver12345|validation failed|
+

@@ -78,8 +78,16 @@
         </configuration>
       </plugin>
         <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.22.1</version>
+            <configuration>
+                <properties>
+                    <property>
+                        <name>dataproviderthreadcount</name>
+                        <value>1</value>
+                    </property>
+                </properties>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
